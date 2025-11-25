@@ -6,7 +6,7 @@ import os
 # Assurez-vous d'avoir 'render_template' dans les imports
 # Si vous aviez importé 'os', assurez-vous qu'il soit utilisé (voir ci-dessous)
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 # --- VARIABLES DE CONFIGURATION ---
 # Pour un déploiement stable sur Render, il est préférable d'utiliser les variables d'environnement.
